@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "name": "EGI Picker",
+    "description": "エギ（餌木）をインターネットで探すときに役立つツール。画像を白黒（グレースケール）にすることでイカの気持ちになることができる。",
+    "version": "1.0",
+    "icons":
+    {
+        "16": "img/icon/icon_16.png",
+        "48": "img/icon/icon_48.png",
+        "128": "img/icon/icon_128.png"
+    },
+    "action":
+    {
+        "default_icon":
+        {
+            "19": "img/icon/icon_19.png",
+            "38": "img/icon/icon_38.png"
+        },
+        "default_title": "EGI Picker",
+        "default_popup": "popup.html"
+    }
+}
