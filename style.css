@@ -1,12 +1,105 @@
-body {
-    width: 100px;
-    height: 30px;
+body,
+main,
+div,
+input,
+label {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    user-select: none;
 }
 
-input {
+body {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}
+
+div.line {
+    background-color: #333333;
+    width: 100%;
+    height: 2px;
+}
+
+div.content_wrap {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+div.label_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: solid 1px #aaaaaa;
+    border-radius: 10px;
+
+}
+
+div.label_wrap div {
+    flex: 1;
+}
+
+div.label_wrap div:not(:last-child) {
+    border-right: solid 1px #aaaaaa;
+}
+
+div.content_title {
+    font-size: 20px;
+}
+
+input#grayscale_button {
     width: 25px;
 }
 
+input[type="radio"] {
+    display: none;
+}
+
 label {
+    cursor: pointer;
+}
+
+label[for="grayscale_button"] {
     font-size: 20px;
+}
+
+label[for="background_gorota"] {
+    background-color: #525C62;
+}
+
+label[for="background_suna"] {
+    background-color: #FDE1C3;
+}
+
+label[for="background_kajime"] {
+    background-color: #623900;
+}
+
+label[for="background_amamo"] {
+    background-color: #578802;
+}
+
+label[for="background_blue"] {
+    background-color: #1A8AE8;
+}
+
+label[for="background_mo"] {
+    background-color: #B7C849;
+}
+
+label[for="background_dosya"] {
+    background-color: #837760;
+}
+
+input[type="radio"] + label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+label[for="background_default"],
+label[for="foreground_default"] {
+    color: #ff00c8;
 }

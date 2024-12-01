@@ -7,9 +7,65 @@
 </head>
 <body>
     <main>
-        <div>
+        <div class="content_wrap">
             <input type="checkbox" id="grayscale_button">
             <label for="grayscale_button">白黒</label>
+        </div>
+        <div class="line"></div>
+        <div class="content_wrap">
+            <div class="content_title">背景</div>
+            <div class="label_wrap">
+                <div>
+                    <input type="radio" name="background" id="background_default" value="" checked="checked">
+                    <label for="background_default">デフォ</label>
+                </div>
+                <div>
+                    <input type="radio" name="background" id="background_gorota" value="#525C62">
+                    <label for="background_gorota">ゴロタ</label>
+                </div>
+                <div>
+                    <input type="radio" name="background" id="background_suna" value="#FDE1C3">
+                    <label for="background_suna">砂</label>
+                </div>
+                <div>
+                    <input type="radio" name="background" id="background_kajime" value="#623900">
+                    <label for="background_kajime">カジメ</label>
+                </div>
+                <div>
+                    <input type="radio" name="background" id="background_amamo" value="#578802">
+                    <label for="background_amamo">アマモ</label>
+                </div>
+                <div>
+                    <input type="radio" name="background" id="background_yami" value="#020204">
+                    <label for="background_yami">闇</label>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="content_wrap">
+            <div class="content_title">前景</div>
+            <div class="label_wrap">
+                <div>
+                    <input type="radio" name="foreground" id="foreground_default" value="" checked="checked">
+                    <label for="foreground_default">デフォ</label>
+                </div>
+                <div>
+                    <input type="radio" name="foreground" id="background_blue" value="#1A8AE8">
+                    <label for="background_blue">ブルー</label>
+                </div>
+                <div>
+                    <input type="radio" name="foreground" id="background_mo" value="#B7C849">
+                    <label for="background_mo">藻</label>
+                </div>
+                <div>
+                    <input type="radio" name="foreground" id="background_dosya" value="#837760">
+                    <label for="background_dosya">土砂</label>
+                </div>
+                <div>
+                    <input type="radio" name="foreground" id="background_hikari" value="#F0F7F5">
+                    <label for="background_hikari">光</label>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./script.js"></script>
